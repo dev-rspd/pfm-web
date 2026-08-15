@@ -1,1 +1,166 @@
 <link rel="icon" type="image/png" href="{{ '/favicon.png' | relative_url }}">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:wght@700&display=swap" rel="stylesheet">
+
+<script>
+  // Applied synchronously, before <body> renders, so a stored preference
+  // never flashes the wrong theme on load. Leaves the attribute unset when
+  // there's no stored choice yet, so the prefers-color-scheme media query
+  // below is what decides the default.
+  (function () {
+    var stored = null;
+    try { stored = localStorage.getItem('creditrichie-theme'); } catch (e) {}
+    if (stored === 'dark' || stored === 'light') {
+      document.documentElement.setAttribute('data-theme', stored);
+    }
+  })();
+</script>
+
+<style>
+  :root {
+    --bg: #fff;
+    --text: #727272;
+    --heading-1: #222;
+    --heading-2: #393939;
+    --heading-3: #494949;
+    --link: #267CB9;
+    --link-hover: #069;
+    --border: #e5e5e5;
+    --code-bg: #f8f8f8;
+    --code-text: #333;
+    --downloads-bg: #f4f4f4;
+    --downloads-border: #e0e0e0;
+    --kbd-bg: #fafbfc;
+    --kbd-border: #c6cbd1;
+    --kbd-text: #444d56;
+  }
+
+  /* Automatic default, unless an explicit choice (data-theme) overrides it. */
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #10151a;
+      --text: #b4bcc4;
+      --heading-1: #f0f3f6;
+      --heading-2: #dde3e9;
+      --heading-3: #c4ccd4;
+      --link: #6cb6ff;
+      --link-hover: #9ecbff;
+      --border: #2c333a;
+      --code-bg: #1a2027;
+      --code-text: #d6dce2;
+      --downloads-bg: #1a2027;
+      --downloads-border: #2c333a;
+      --kbd-bg: #1a2027;
+      --kbd-border: #2c333a;
+      --kbd-text: #b4bcc4;
+    }
+  }
+
+  /* The toggle always wins, in both directions, regardless of OS setting. */
+  :root[data-theme="dark"] {
+    --bg: #10151a;
+    --text: #b4bcc4;
+    --heading-1: #f0f3f6;
+    --heading-2: #dde3e9;
+    --heading-3: #c4ccd4;
+    --link: #6cb6ff;
+    --link-hover: #9ecbff;
+    --border: #2c333a;
+    --code-bg: #1a2027;
+    --code-text: #d6dce2;
+    --downloads-bg: #1a2027;
+    --downloads-border: #2c333a;
+    --kbd-bg: #1a2027;
+    --kbd-border: #2c333a;
+    --kbd-text: #b4bcc4;
+  }
+
+  body { background-color: var(--bg); color: var(--text); }
+
+  h1, h2, h3, h4, h5, h6 { color: var(--heading-1); }
+  h2 { color: var(--heading-2); }
+  h3, h4, h5, h6 { color: var(--heading-3); }
+
+  a { color: var(--link); }
+  a:hover, a:focus { color: var(--link-hover); }
+
+  blockquote { border-left-color: var(--border); }
+
+  code, pre { color: var(--code-text); }
+  pre { background: var(--code-bg); border-color: var(--border); }
+
+  th, td { border-bottom-color: var(--border); }
+
+  kbd {
+    background-color: var(--kbd-bg);
+    border-color: var(--kbd-border);
+    color: var(--kbd-text);
+  }
+
+  hr { background: var(--border); }
+
+  ul.downloads { background: var(--downloads-bg); border-color: var(--downloads-border); }
+  .downloads li { border-right-color: var(--downloads-border); }
+
+  /* The site title in the sidebar - same typeface as the app logo. */
+  header h1 a {
+    font-family: "Google Sans Code", Monaco, "Bitstream Vera Sans Mono", "Lucida Console",
+      Terminal, Consolas, "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace;
+    font-weight: 700;
+  }
+
+  #theme-toggle {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 100;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--text);
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  @media print, screen and (max-width: 960px) {
+    #theme-toggle {
+      position: static;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var root = document.documentElement;
+
+    function effectiveTheme() {
+      var explicit = root.getAttribute('data-theme');
+      if (explicit === 'dark' || explicit === 'light') return explicit;
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    function label(theme) {
+      return theme === 'dark' ? 'Light mode' : 'Dark mode';
+    }
+
+    var btn = document.createElement('button');
+    btn.id = 'theme-toggle';
+    btn.type = 'button';
+    btn.textContent = label(effectiveTheme());
+    btn.setAttribute('aria-label', 'Toggle dark mode');
+
+    btn.addEventListener('click', function () {
+      var next = effectiveTheme() === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('creditrichie-theme', next); } catch (e) {}
+      btn.textContent = label(next);
+    });
+
+    document.body.insertBefore(btn, document.body.firstChild);
+  });
+</script>

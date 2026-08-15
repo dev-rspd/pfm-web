@@ -1,5 +1,5 @@
 ---
-title: CreditRichie
+title: "CreditRi¢hie"
 ---
 
 # CreditRichie
