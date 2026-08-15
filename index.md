@@ -4,7 +4,7 @@ title: "CreditRi¢hie"
 
 # CreditRichie
 
-CreditRichie is a personal financial management application for tracking credit card balances, statement dates, due dates, and payments — optionally linking financial accounts through our supported third-party aggregator, Plaid, to automatically populate this information. It is developed and operated by Rishi Dasari, an individual developer, for individual and family use.
+CreditRichie is a personal financial management application for tracking credit card balances, statement dates, due dates, and payments: optionally linking financial accounts through our supported third-party aggregator, Plaid, to automatically populate this information. It is developed and operated by Rishi Dasari, an individual developer, for individual and family use.
 
 ## Learn more
 

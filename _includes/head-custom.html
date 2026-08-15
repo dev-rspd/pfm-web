@@ -35,6 +35,7 @@
     --kbd-bg: #fafbfc;
     --kbd-border: #c6cbd1;
     --kbd-text: #444d56;
+    --muted: #777;
   }
 
   /* Automatic default, unless an explicit choice (data-theme) overrides it. */
@@ -55,6 +56,7 @@
       --kbd-bg: #1a2027;
       --kbd-border: #2c333a;
       --kbd-text: #b4bcc4;
+      --muted: #8b95a1;
     }
   }
 
@@ -75,6 +77,7 @@
     --kbd-bg: #1a2027;
     --kbd-border: #2c333a;
     --kbd-text: #b4bcc4;
+    --muted: #8b95a1;
   }
 
   body { background-color: var(--bg); color: var(--text); }
@@ -85,6 +88,7 @@
 
   a { color: var(--link); }
   a:hover, a:focus { color: var(--link-hover); }
+  a small, a:hover small { color: var(--muted); }
 
   blockquote { border-left-color: var(--border); }
 
@@ -92,6 +96,13 @@
   pre { background: var(--code-bg); border-color: var(--border); }
 
   th, td { border-bottom-color: var(--border); }
+  th { color: var(--heading-1); }
+
+  /* Theme hardcodes these to the same near-black as h1 (#222/#444),
+     separately from the heading rules above - easy to miss and the most
+     common one to actually notice, since **bold** in markdown renders as
+     a plain <strong>, not a heading. */
+  strong, dt, .downloads a strong { color: var(--heading-1); }
 
   kbd {
     background-color: var(--kbd-bg);

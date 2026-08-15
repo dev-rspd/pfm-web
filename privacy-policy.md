@@ -38,7 +38,7 @@ We use your information solely to operate the App's core functionality:
 
 To provide account-linking functionality, we work with the following third-party financial data aggregator:
 
-- **Plaid** — used to retrieve account balance, statement, and liability information (statement balance, due date, minimum payment, credit limit) from participating financial institutions.
+- **Plaid**: used to retrieve account balance, statement, and liability information (statement balance, due date, minimum payment, credit limit) from participating financial institutions.
 
 When you choose to link an account, you authorize Plaid to share your financial account data with the App, subject to its own privacy policy and terms:
 

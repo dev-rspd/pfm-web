@@ -53,7 +53,7 @@ The App is provided "as is" and "as available," without warranties of any kind, 
 
 ## 8. Limitation of Liability
 
-To the fullest extent permitted by applicable law, the developer shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of data, arising out of or related to your use of, or inability to use, the App — including but not limited to reliance on inaccurate account or balance information, or unauthorized access to your account resulting from your own failure to safeguard your credentials.
+To the fullest extent permitted by applicable law, the developer shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of data, arising out of or related to your use of, or inability to use, the App, including but not limited to reliance on inaccurate account or balance information, or unauthorized access to your account resulting from your own failure to safeguard your credentials.
 
 ## 9. Account Termination
 
