@@ -71,4 +71,4 @@ These Terms are governed by the laws of the State of Texas, United States, witho
 
 If you have questions about these Terms, please contact:
 
-**Email:** support@creditrichieapp.com
+**Email:** [support@creditrichieapp.com](mailto:support@creditrichieapp.com)

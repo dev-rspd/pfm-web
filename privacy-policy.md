@@ -42,7 +42,7 @@ To provide account-linking functionality, we work with the following third-party
 
 When you choose to link an account, you authorize Plaid to share your financial account data with the App, subject to its own privacy policy and terms:
 
-- Plaid's Privacy Policy: https://plaid.com/legal/#end-user-privacy-policy
+- [Plaid's Privacy Policy](https://plaid.com/legal/#end-user-privacy-policy)
 
 We do not receive or store your bank login credentials directly; authentication with your financial institution happens through the aggregator's own secure systems.
 
@@ -88,4 +88,4 @@ We may update this Privacy Policy from time to time. Material changes will be re
 
 If you have questions about this Privacy Policy or your data, please contact:
 
-**Email:** support@creditrichieapp.com
+**Email:** [support@creditrichieapp.com](mailto:support@creditrichieapp.com)
