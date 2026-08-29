@@ -7,7 +7,7 @@ title: Privacy Policy
 **Effective date:** 2026-07-11
 **Last updated:** 2026-08-14
 
-This Privacy Policy describes how CreditRichie ("the App," "we," "us") collects, uses, stores, and protects your information. CreditRichie is a personal financial management application developed and operated by Rishi Dasari, an individual developer, for individual and family use.
+This Privacy Policy describes how CreditRichie ("the App," "we," "us") collects, uses, stores, and protects your information. CreditRichie is a personal financial management application developed and operated by an individual developer, for individual and family use.
 
 ## 1. Who We Are
 

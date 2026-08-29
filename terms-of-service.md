@@ -7,7 +7,7 @@ title: Terms of Service
 **Effective date:** 2026-07-11
 **Last updated:** 2026-08-14
 
-These Terms of Service ("Terms") govern your use of CreditRichie (the "App"), developed and operated by Rishi Dasari, an individual developer. By creating an account or using the App, you agree to these Terms.
+These Terms of Service ("Terms") govern your use of CreditRichie (the "App"), developed and operated by an individual developer. By creating an account or using the App, you agree to these Terms.
 
 ## 1. Description of the Service
 
