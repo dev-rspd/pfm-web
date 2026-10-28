@@ -5,13 +5,13 @@ title: Privacy Policy
 # Privacy Policy
 
 **Effective date:** 2026-07-11
-**Last updated:** 2026-08-14
+**Last updated:** 2026-10-28
 
-This Privacy Policy describes how CreditRichie ("the App," "we," "us") collects, uses, stores, and protects your information. CreditRichie is a personal financial management application developed and operated by an individual developer, for individual and family use.
+This Privacy Policy describes how CreditRichie ("the App," "we," "us") collects, uses, stores, and protects your information. CreditRichie is a personal financial management application developed and operated by Deep Knowledge Kinetics LLC, a limited liability company organized under the laws of the State of Texas, for individual and family use.
 
 ## 1. Who We Are
 
-CreditRichie is operated by an individual developer, not a registered company. There is no organizational entity separate from the developer. Questions about this policy or your data can be directed to the contact listed in Section 10.
+CreditRichie is developed and operated by Deep Knowledge Kinetics LLC, a Texas limited liability company. Questions about this policy or your data can be directed to the contact listed in Section 10.
 
 ## 2. Information We Collect
 

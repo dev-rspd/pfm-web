@@ -5,15 +5,15 @@ title: Terms of Service
 # Terms of Service
 
 **Effective date:** 2026-07-11
-**Last updated:** 2026-08-14
+**Last updated:** 2026-10-28
 
-These Terms of Service ("Terms") govern your use of CreditRichie (the "App"), developed and operated by an individual developer. By creating an account or using the App, you agree to these Terms.
+These Terms of Service ("Terms") govern your use of CreditRichie (the "App"), developed and operated by Deep Knowledge Kinetics LLC, a Texas limited liability company ("we," "us," or "the Company"). By creating an account or using the App, you agree to these Terms.
 
 ## 1. Description of the Service
 
 CreditRichie is a personal financial management application that allows users to track credit card balances, statement dates, due dates, and payments, and to optionally link financial accounts through our supported third-party aggregator, Plaid, to automatically populate this information.
 
-The App is currently intended for individual and family use and is provided on an as-is basis by an individual developer, not a registered company.
+The App is currently intended for individual and family use and is provided on an as-is basis by Deep Knowledge Kinetics LLC.
 
 ## 2. Eligibility
 
